@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: login-website
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app  # Adjust this depending on your Flask app structure
+    staticPublishPath: ./password_website/static  # Adjust path based on your Flask app
+    branch: main
