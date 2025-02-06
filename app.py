@@ -6,7 +6,7 @@ app = Flask(__name__)
 USERNAME = "mylesd"
 PASSWORD = "121723"
 
-@app.route("/")
+@app.route("/framer")
 def home():
     """Render the login page."""
     return render_template("login.html")
